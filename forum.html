@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diễn Đàn | Sổ Liên Lạc Điện Tử</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./forum.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1><i class="fas fa-book"></i> Sổ Liên Lạc Điện Tử</h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="./infomation.html"
+            ><i class="fas fa-user"></i> Thông Tin Cá Nhân</a
+          >
+        </li>
+        <li>
+          <a href="./schedual.html"
+            ><i class="fas fa-calendar-alt"></i> Lịch Học & Bài Tập</a
+          >
+        </li>
+        <li>
+          <a href="./score.html"><i class="fas fa-chart-bar"></i> Điểm Số</a>
+        </li>
+        <li>
+          <a href="./notification.html"
+            ><i class="fas fa-bell"></i> Thông Báo</a
+          >
+        </li>
+        <li>
+          <a href="./library.html"><i class="fas fa-book-open"></i> Thư Viện</a>
+        </li>
+        <li>
+          <a href="#diendan"><i class="fas fa-comments"></i> Diễn Đàn</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="forum-container">
+        <!-- Forum Header -->
+        <div class="forum-header">
+          <h2>Diễn đàn học tập</h2>
+          <a href="#" class="create-thread-btn">
+            <i class="fas fa-plus"></i>
+            Tạo chủ đề mới
+          </a>
+        </div>
+
+        <!-- Hot Topics Section -->
+        <section class="hot-topics">
+          <h3 class="hot-topics-title">
+            <i class="fas fa-fire"></i>
+            Chủ đề nóng
+          </h3>
+          <div class="hot-topic-list">
+            <div class="hot-topic-item">
+              <i class="fas fa-arrow-trend-up"></i>
+              Ôn thi THPT Quốc gia
+            </div>
+            <div class="hot-topic-item">
+              <i class="fas fa-arrow-trend-up"></i>
+              Giải đề thi thử
+            </div>
+            <div class="hot-topic-item">
+              <i class="fas fa-arrow-trend-up"></i>
+              Phương pháp học tập
+            </div>
+            <div class="hot-topic-item">
+              <i class="fas fa-arrow-trend-up"></i>
+              Tư vấn chọn nghề
+            </div>
+          </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="search-filter-section">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm kiếm chủ đề..."
+            />
+          </div>
+          <div class="filters">
+            <select class="filter-select">
+              <option value="">Tất cả chuyên mục</option>
+              <option>Thảo luận chung</option>
+              <option>Hỏi đáp môn học</option>
+              <option>Chia sẻ tài liệu</option>
+              <option>Tâm sự học đường</option>
+            </select>
+            <select class="filter-select">
+              <option value="">Sắp xếp theo</option>
+              <option>Mới nhất</option>
+              <option>Nhiều bình luận nhất</option>
+              <option>Nhiều lượt xem nhất</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Forum Categories -->
+        <section class="forum-categories">
+          <div class="category-header">
+            <i class="fas fa-folder"></i>
+            Chuyên mục
+          </div>
+          <div class="category">
+            <h3 class="category-title">
+              <i class="fas fa-comments"></i>
+              Thảo luận chung
+            </h3>
+            <div class="category-stats">
+              <span><i class="fas fa-file-alt"></i> 150 chủ đề</span>
+              <span><i class="fas fa-comments"></i> 1,234 bình luận</span>
+            </div>
+          </div>
+          <div class="category">
+            <h3 class="category-title">
+              <i class="fas fa-question-circle"></i>
+              Hỏi đáp môn học
+            </h3>
+            <div class="category-stats">
+              <span><i class="fas fa-file-alt"></i> 280 chủ đề</span>
+              <span><i class="fas fa-comments"></i> 2,156 bình luận</span>
+            </div>
+          </div>
+          <div class="category">
+            <h3 class="category-title">
+              <i class="fas fa-share-alt"></i>
+              Chia sẻ tài liệu
+            </h3>
+            <div class="category-stats">
+              <span><i class="fas fa-file-alt"></i> 95 chủ đề</span>
+              <span><i class="fas fa-comments"></i> 876 bình luận</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Thread List -->
+        <section class="thread-list">
+          <div class="thread">
+            <div class="thread-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="thread-content">
+              <h3 class="thread-title">
+                Hướng dẫn giải bài tập Toán 12 chương 3
+              </h3>
+              <div class="thread-info">
+                <span><i class="fas fa-user"></i> NguyenVanA</span>
+                <span><i class="far fa-clock"></i> 2 giờ trước</span>
+              </div>
+              <div class="thread-tags">
+                <span class="tag">Toán học</span>
+                <span class="tag">Lớp 12</span>
+                <span class="tag">Bài tập</span>
+              </div>
+            </div>
+            <div class="thread-stats">
+              <div class="stats-item">
+                <i class="far fa-eye"></i>
+                156 lượt xem
+              </div>
+              <div class="stats-item">
+                <i class="far fa-comment"></i>
+                23 bình luận
+              </div>
+            </div>
+          </div>
+
+          <div class="thread">
+            <div class="thread-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="thread-content">
+              <h3 class="thread-title">Chia sẻ phương pháp học Văn hiệu quả</h3>
+              <div class="thread-info">
+                <span><i class="fas fa-user"></i> TranThiB</span>
+                <span><i class="far fa-clock"></i> 5 giờ trước</span>
+              </div>
+              <div class="thread-tags">
+                <span class="tag">Văn học</span>
+                <span class="tag">Phương pháp học</span>
+                <span class="tag">Chia sẻ</span>
+              </div>
+            </div>
+            <div class="thread-stats">
+              <div class="stats-item">
+                <i class="far fa-eye"></i>
+                98 lượt xem
+              </div>
+              <div class="stats-item">
+                <i class="far fa-comment"></i>
+                15 bình luận
+              </div>
+            </div>
+          </div>
+
+          <div class="thread">
+            <div class="thread-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="thread-content">
+              <h3 class="thread-title">
+                Tổng hợp đề thi thử THPT Quốc gia môn Tiếng Anh
+              </h3>
+              <div class="thread-info">
+                <span><i class="fas fa-user"></i> LePhuongC</span>
+                <span><i class="far fa-clock"></i> 1 ngày trước</span>
+              </div>
+              <div class="thread-tags">
+                <span class="tag">Tiếng Anh</span>
+                <span class="tag">Đề thi</span>
+                <span class="tag">THPT QG</span>
+              </div>
+            </div>
+            <div class="thread-stats">
+              <div class="stats-item">
+                <i class="far fa-eye"></i>
+                324 lượt xem
+              </div>
+              <div class="stats-item">
+                <i class="far fa-comment"></i>
+                45 bình luận
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">...</button>
+          <button class="page-btn">10</button>
+          <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

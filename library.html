@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thư Viện Tài Liệu | Sổ Liên Lạc Điện Tử</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./library.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1><i class="fas fa-book"></i> Sổ Liên Lạc Điện Tử</h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="./infomation.html"
+            ><i class="fas fa-user"></i> Thông Tin Cá Nhân</a
+          >
+        </li>
+        <li>
+          <a href="./schedual.html"
+            ><i class="fas fa-calendar-alt"></i> Lịch Học & Bài Tập</a
+          >
+        </li>
+        <li>
+          <a href="./score.html"><i class="fas fa-chart-bar"></i> Điểm Số</a>
+        </li>
+        <li>
+          <a href="./notification.html"
+            ><i class="fas fa-bell"></i> Thông Báo</a
+          >
+        </li>
+        <li>
+          <a href="#thuvien"><i class="fas fa-book-open"></i> Thư Viện</a>
+        </li>
+        <li>
+          <a href="./forum.html"><i class="fas fa-comments"></i> Diễn Đàn</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="library-container">
+        <!-- Quick Access Section -->
+        <section class="quick-access">
+          <h2 class="quick-access-title">
+            <i class="fas fa-star"></i>
+            Truy cập nhanh
+          </h2>
+          <div class="quick-access-grid">
+            <div class="quick-access-item">
+              <div class="quick-access-icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <div>Sách giáo khoa</div>
+            </div>
+            <div class="quick-access-item">
+              <div class="quick-access-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div>Đề thi</div>
+            </div>
+            <div class="quick-access-item">
+              <div class="quick-access-icon">
+                <i class="fas fa-video"></i>
+              </div>
+              <div>Bài giảng</div>
+            </div>
+            <div class="quick-access-item">
+              <div class="quick-access-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div>Bài tập</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="search-filter-section">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm kiếm tài liệu..."
+            />
+          </div>
+          <div class="filters">
+            <select class="filter-select">
+              <option value="">Môn học</option>
+              <option>Toán học</option>
+              <option>Vật lý</option>
+              <option>Hóa học</option>
+              <option>Văn học</option>
+            </select>
+            <select class="filter-select">
+              <option value="">Khối lớp</option>
+              <option>Lớp 10</option>
+              <option>Lớp 11</option>
+              <option>Lớp 12</option>
+            </select>
+            <select class="filter-select">
+              <option value="">Loại tài liệu</option>
+              <option>Sách giáo khoa</option>
+              <option>Sách bài tập</option>
+              <option>Đề thi</option>
+              <option>Tài liệu tham khảo</option>
+            </select>
+            <select class="filter-select">
+              <option value="">Sắp xếp theo</option>
+              <option>Mới nhất</option>
+              <option>Phổ biến nhất</option>
+              <option>Tên A-Z</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- Documents Grid -->
+        <div class="documents-grid">
+          <!-- Document Card 1 -->
+          <div class="document-card">
+            <div class="document-preview pdf">
+              <i class="far fa-file-pdf"></i>
+            </div>
+            <div class="document-info">
+              <h3 class="document-title">
+                Sách giáo khoa Toán học 12 - Đại số và Giải tích
+              </h3>
+              <div class="document-meta">
+                <span class="meta-item">
+                  <i class="far fa-clock"></i>
+                  Cập nhật: 20/10/2024
+                </span>
+                <span class="meta-item">
+                  <i class="far fa-eye"></i>
+                  1,234 lượt xem
+                </span>
+              </div>
+              <div class="document-tags">
+                <span class="tag">Toán học</span>
+                <span class="tag">Lớp 12</span>
+                <span class="tag">Sách giáo khoa</span>
+              </div>
+              <div class="document-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                  Lưu
+                </button>
+                <a href="#" class="download-btn">
+                  <i class="fas fa-download"></i>
+                  Tải xuống
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Card 2 -->
+          <div class="document-card">
+            <div class="document-preview doc">
+              <i class="far fa-file-word"></i>
+            </div>
+            <div class="document-info">
+              <h3 class="document-title">
+                Đề cương ôn tập Vật lý 12 - Học kỳ I
+              </h3>
+              <div class="document-meta">
+                <span class="meta-item">
+                  <i class="far fa-clock"></i>
+                  Cập nhật: 18/10/2024
+                </span>
+                <span class="meta-item">
+                  <i class="far fa-eye"></i>
+                  856 lượt xem
+                </span>
+              </div>
+              <div class="document-tags">
+                <span class="tag">Vật lý</span>
+                <span class="tag">Lớp 12</span>
+                <span class="tag">Đề cương</span>
+              </div>
+              <div class="document-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                  Lưu
+                </button>
+                <a href="#" class="download-btn">
+                  <i class="fas fa-download"></i>
+                  Tải xuống
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document Card 3 -->
+          <div class="document-card">
+            <div class="document-preview ppt">
+              <i class="far fa-file-powerpoint"></i>
+            </div>
+            <div class="document-info">
+              <h3 class="document-title">
+                Bài giảng Hóa học 12 - Chương 3: Este và Lipit
+              </h3>
+              <div class="document-meta">
+                <span class="meta-item">
+                  <i class="far fa-clock"></i>
+                  Cập nhật: 15/10/2024
+                </span>
+                <span class="meta-item">
+                  <i class="far fa-eye"></i>
+                  567 lượt xem
+                </span>
+              </div>
+              <div class="document-tags">
+                <span class="tag">Hóa học</span>
+                <span class="tag">Lớp 12</span>
+                <span class="tag">Bài giảng</span>
+              </div>
+              <div class="document-actions">
+                <button class="action-btn">
+                  <i class="far fa-heart"></i>
+                  Lưu
+                </button>
+                <a href="#" class="download-btn">
+                  <i class="fas fa-download"></i>
+                  Tải xuống
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">...</button>
+          <button class="page-btn">10</button>
+          <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

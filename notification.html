@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Báo | Sổ Liên Lạc Điện Tử</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./notification.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1><i class="fas fa-book"></i> Sổ Liên Lạc Điện Tử</h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="./infomation.html"
+            ><i class="fas fa-user"></i> Thông Tin Cá Nhân</a
+          >
+        </li>
+        <li>
+          <a href="./schedual.html"
+            ><i class="fas fa-calendar-alt"></i> Lịch Học & Bài Tập</a
+          >
+        </li>
+        <li>
+          <a href="./score.html"><i class="fas fa-chart-bar"></i> Điểm Số</a>
+        </li>
+        <li>
+          <a href="#thongbao"><i class="fas fa-bell"></i> Thông Báo</a>
+        </li>
+        <li>
+          <a href="./library.html"><i class="fas fa-book-open"></i> Thư Viện</a>
+        </li>
+        <li>
+          <a href="./forum.html"><i class="fas fa-comments"></i> Diễn Đàn</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="notifications-container">
+        <!-- Filter Section -->
+        <div class="filter-section">
+          <div class="filter-buttons">
+            <button class="filter-btn active">
+              Tất cả
+              <span class="badge">25</span>
+            </button>
+            <button class="filter-btn">
+              Chưa đọc
+              <span class="badge">8</span>
+            </button>
+            <button class="filter-btn">
+              Học tập
+              <span class="badge">12</span>
+            </button>
+            <button class="filter-btn">
+              Hoạt động
+              <span class="badge">5</span>
+            </button>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm kiếm thông báo..."
+            />
+          </div>
+        </div>
+
+        <!-- Notifications List -->
+        <div class="notifications-list">
+          <!-- Unread Notification -->
+          <div class="notification-item unread">
+            <span class="priority-badge priority-high">Quan trọng</span>
+            <div class="notification-header">
+              <h3 class="notification-title">
+                <i class="fas fa-exclamation-circle"></i>
+                Lịch thi học kỳ II năm học 2023-2024
+              </h3>
+              <span class="notification-date">Hôm nay, 10:30</span>
+            </div>
+            <div class="notification-content">
+              Nhà trường thông báo lịch thi học kỳ II cho các khối lớp. Học sinh
+              xem chi tiết lịch thi và chuẩn bị ôn tập...
+            </div>
+            <div class="notification-footer">
+              <span class="notification-category">Học tập</span>
+              <div class="notification-actions">
+                <button class="action-btn">
+                  <i class="far fa-bookmark"></i>
+                  Lưu
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-eye"></i>
+                  Đánh dấu đã đọc
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regular Notification -->
+          <div class="notification-item">
+            <span class="priority-badge priority-medium">Thường</span>
+            <div class="notification-header">
+              <h3 class="notification-title">
+                <i class="fas fa-users"></i>
+                Họp phụ huynh giữa học kỳ
+              </h3>
+              <span class="notification-date">Hôm qua, 15:45</span>
+            </div>
+            <div class="notification-content">
+              Thông báo về buổi họp phụ huynh giữa học kỳ II. Thời gian: 8h00
+              ngày 15/11/2024. Địa điểm: Hội trường trường...
+            </div>
+            <div class="notification-footer">
+              <span class="notification-category">Hoạt động</span>
+              <div class="notification-actions">
+                <button class="action-btn">
+                  <i class="far fa-bookmark"></i>
+                  Lưu
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-trash-alt"></i>
+                  Xóa
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Low Priority Notification -->
+          <div class="notification-item">
+            <span class="priority-badge priority-low">Thông thường</span>
+            <div class="notification-header">
+              <h3 class="notification-title">
+                <i class="fas fa-volleyball-ball"></i>
+                Hoạt động ngoại khóa tháng 11
+              </h3>
+              <span class="notification-date">22/10/2024</span>
+            </div>
+            <div class="notification-content">
+              Thông báo về các hoạt động ngoại khóa trong tháng 11. Bao gồm: Hội
+              thao, tham quan bảo tàng và hoạt động từ thiện...
+            </div>
+            <div class="notification-footer">
+              <span class="notification-category">Hoạt động</span>
+              <div class="notification-actions">
+                <button class="action-btn">
+                  <i class="far fa-bookmark"></i>
+                  Lưu
+                </button>
+                <button class="action-btn">
+                  <i class="far fa-trash-alt"></i>
+                  Xóa
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">...</button>
+          <button class="page-btn">10</button>
+          <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

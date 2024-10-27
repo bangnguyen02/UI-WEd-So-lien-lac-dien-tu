@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Điểm Số & Đánh Giá | Sổ Liên Lạc Điện Tử</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./score.css" />
+  </head>
+  <body>
+    <!-- Header và Nav giữ nguyên -->
+    <header class="header">
+      <h1><i class="fas fa-book"></i> Sổ Liên Lạc Điện Tử</h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="./infomation.html"
+            ><i class="fas fa-user"></i> Thông Tin Cá Nhân</a
+          >
+        </li>
+        <li>
+          <a href="./schedual.html"
+            ><i class="fas fa-calendar-alt"></i> Lịch Học & Bài Tập</a
+          >
+        </li>
+        <li>
+          <a href="#diemso"><i class="fas fa-chart-bar"></i> Điểm Số</a>
+        </li>
+        <li>
+          <a href="./notification.html"
+            ><i class="fas fa-bell"></i> Thông Báo</a
+          >
+        </li>
+        <li>
+          <a href="./library.html"><i class="fas fa-book-open"></i> Thư Viện</a>
+        </li>
+        <li>
+          <a href="./forum.html"><i class="fas fa-comments"></i> Diễn Đàn</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="scores-container">
+        <!-- Semester Selection -->
+        <div class="semester-selection">
+          <div class="semester-buttons">
+            <button class="semester-btn">Học kỳ I (2023-2024)</button>
+            <button class="semester-btn active">Học kỳ II (2023-2024)</button>
+            <button class="semester-btn">Cả năm (2023-2024)</button>
+          </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+          <div class="summary-card">
+            <i
+              class="fas fa-star fa-2x"
+              style="color: var(--warning-color)"
+            ></i>
+            <div class="number">8.5</div>
+            <div class="label">Điểm Trung Bình</div>
+          </div>
+          <div class="summary-card">
+            <i
+              class="fas fa-trophy fa-2x"
+              style="color: var(--success-color)"
+            ></i>
+            <div class="number">12</div>
+            <div class="label">Điểm Thi Cao Nhất</div>
+          </div>
+          <div class="summary-card">
+            <i
+              class="fas fa-tasks fa-2x"
+              style="color: var(--secondary-color)"
+            ></i>
+            <div class="number">95%</div>
+            <div class="label">Tỷ Lệ Hoàn Thành</div>
+          </div>
+          <div class="summary-card">
+            <i
+              class="fas fa-medal fa-2x"
+              style="color: var(--accent-color)"
+            ></i>
+            <div class="number">3</div>
+            <div class="label">Xếp Hạng Lớp</div>
+          </div>
+        </div>
+
+        <!-- Detailed Scores -->
+        <div class="scores-table-container">
+          <h2>Chi Tiết Điểm Số</h2>
+          <table class="scores-table">
+            <thead>
+              <tr>
+                <th>Môn Học</th>
+                <th>Điểm Miệng</th>
+                <th>Điểm 15p</th>
+                <th>Điểm 1 Tiết</th>
+                <th>Điểm Thi</th>
+                <th>Trung Bình</th>
+                <th>Đánh Giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Toán</td>
+                <td>9, 8, 9</td>
+                <td>8.5, 9</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>8.8</td>
+                <td><span class="score-badge excellent">Giỏi</span></td>
+              </tr>
+              <tr>
+                <td>Văn</td>
+                <td>8, 7, 8</td>
+                <td>7.5, 8</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>8.0</td>
+                <td><span class="score-badge good">Khá</span></td>
+              </tr>
+              <tr>
+                <td>Anh</td>
+                <td>9, 9, 8</td>
+                <td>9, 8.5</td>
+                <td>9.0</td>
+                <td>9.5</td>
+                <td>9.0</td>
+                <td><span class="score-badge excellent">Giỏi</span></td>
+              </tr>
+              <!-- Thêm các môn học khác -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-section">
+          <div class="chart-container">
+            <h3 class="chart-title">Phân Tích Điểm Số</h3>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Toán</span>
+                <span>8.8/10</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Văn</span>
+                <span>8.0/10</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Anh</span>
+                <span>9.0/10</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+          <h3 class="chart-title">Nhận Xét của Giáo Viên</h3>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="teacher-name">Cô Nguyễn Thị A - Giáo viên Toán</span>
+              <span class="comment-date">20/10/2024</span>
+            </div>
+            <p class="comment-text">
+              Học sinh có khả năng tư duy logic tốt, nắm vững kiến thức cơ bản
+              và nâng cao. Cần tăng cường làm bài tập để cải thiện kỹ năng giải
+              nhanh.
+            </p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-header">
+              <span class="teacher-name">Thầy Trần Văn B - Giáo viên Văn</span>
+              <span class="comment-date">18/10/2024</span>
+            </div>
+            <p class="comment-text">
+              Học sinh có khả năng phân tích và cảm thụ văn học tốt. Cần cải
+              thiện kỹ năng viết văn và bố cục bài làm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer giữ nguyên -->
+  </body>
+</html>
